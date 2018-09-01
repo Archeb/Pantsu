@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>PantsuTalk</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.16/peer.min.js"></script>
+        <script src="crypto-js.js"></script>
+        <script src="jsencrypt.min.js"></script>
+    	<script src="pantsu.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+	<body>
+        <label for="privkey">Private Key</label><br/>
+    <textarea id="privkey" rows="15" cols="65">
+            <label for="privkey">Private Key</label><br/>
+    <textarea id="privkey" rows="15" cols="65">
+            </textarea><br/>
+    <label for="pubkey">Public Key</label><br/>
+    <textarea id="pubkey" rows="15" cols="65">
+            </textarea><br/>
+            
+        <script>
+      var crypt = new JSEncrypt({default_key_size: 1024});
+      crypt.getKey();
+      document.querySelector('#privkey').value=crypt.getPrivateKey();
+      document.querySelector('#pubkey').value=crypt.getPublicKey();
+
+        </script>
+	</body>
+</html>
