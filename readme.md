@@ -1,4 +1,4 @@
-#Pantsu (胖次)
+# Pantsu (胖次)
 
 胖次是一个基于 WebRTC 的 P2P 即时聊天协议和实现
 
